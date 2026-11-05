@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kavya | Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Header & Navigation -->
+  <header class="navbar">
+    <a href="#hero" class="logo">Kavya<span>.</span></a>
+    
+    <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
+      ☰
+    </button>
+
+    <nav class="nav-links" id="navLinks">
+      <a href="#about" class="nav-item">About</a>
+      <a href="#skills" class="nav-item">Skills</a>
+      <a href="#projects" class="nav-item">Projects</a>
+      <a href="#contact" class="nav-item">Contact</a>
+      <button id="themeToggle" class="theme-btn" aria-label="Toggle theme">🌙</button>
+    </nav>
+  </header>
+
+  <main>
+    <!-- Hero Section -->
+    <section id="hero" class="hero-section">
+      <div class="hero-content">
+        <p class="greeting">Hi, I'm</p>
+        <h1>Kavya</h1>
+        <p class="pitch">Full-Stack Software Developer & Embedded Systems Enthusiast</p>
+        <p class="subtext">I build scalable web applications, hardware integrations, and efficient software solutions.</p>
+        <a href="#projects" class="btn primary-btn">View My Work</a>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about-section">
+      <h2 class="section-title">About Me</h2>
+      <div class="about-card">
+        <p>
+          I am a passionate Computer Science student and developer focused on crafting reliable software systems. 
+          My experience spans full-stack web development, microcontrollers, and algorithmic problem-solving. 
+          I enjoy taking projects from concept to working prototype—focusing on clean architecture and performance.
+        </p>
+      </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills-section">
+      <h2 class="section-title">Skills & Expertise</h2>
+      <div class="skills-grid">
+        <div class="skill-category">
+          <h3>Languages</h3>
+          <ul>
+            <li>Java</li>
+            <li>Python</li>
+            <li>C / C++</li>
+            <li>JavaScript (ES6+)</li>
+            <li>HTML5 & CSS3</li>
+          </ul>
+        </div>
+        <div class="skill-category">
+          <h3>Web & Backend</h3>
+          <ul>
+            <li>Node.js & Express</li>
+            <li>React.js</li>
+            <li>RESTful APIs</li>
+            <li>Spring Boot</li>
+            <li>MongoDB / SQL</li>
+          </ul>
+        </div>
+        <div class="skill-category">
+          <h3>Tools & Hardware</h3>
+          <ul>
+            <li>Git & GitHub</li>
+            <li>ESP32 & Arduino</li>
+            <li>VS Code</li>
+            <li>Linux CLI</li>
+            <li>Jira / Agile</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects-section">
+      <h2 class="section-title">Featured Projects</h2>
+      
+      <!-- Project Filter -->
+      <div class="filter-container">
+        <button class="filter-btn active" data-filter="all">All</button>
+        <button class="filter-btn" data-filter="web">Web Dev</button>
+        <button class="filter-btn" data-filter="hardware">Hardware / IoT</button>
+        <button class="filter-btn" data-filter="python">Python</button>
+      </div>
+
+      <div class="projects-grid">
+        <!-- Project 1 -->
+        <article class="project-card" data-category="web">
+          <div class="project-body">
+            <h3>PrecisionStock</h3>
+            <p>Warehouse inventory management system built with the MERN stack. Includes real-time tracking, stock alerts, and role-based access control.</p>
+            <div class="tech-tags">
+              <span>MongoDB</span>
+              <span>Express</span>
+              <span>React</span>
+              <span>Node.js</span>
+            </div>
+            <div class="project-links">
+              <a href="https://github.com" target="_blank" rel="noopener">GitHub</a>
+              <a href="#" class="live-demo">Live Demo</a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Project 2 -->
+        <article class="project-card" data-category="hardware">
+          <div class="project-body">
+            <h3>ESP32 Telemetry Logger</h3>
+            <p>Portable hardware system logging 3-axis motion measurements from an ADXL345 accelerometer to an SD card with real-time OLED telemetry rendering.</p>
+            <div class="tech-tags">
+              <span>ESP32</span>
+              <span>C++</span>
+              <span>I2C / SPI</span>
+              <span>OLED</span>
+            </div>
+            <div class="project-links">
+              <a href="https://github.com" target="_blank" rel="noopener">GitHub</a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Project 3 -->
+        <article class="project-card" data-category="python">
+          <div class="project-body">
+            <h3>Smart Expense Categorizer</h3>
+            <p>Expense tracker using a scikit-learn Naive Bayes classifier to automatically categorize transactional descriptions in Python.</p>
+            <div class="tech-tags">
+              <span>Python</span>
+              <span>scikit-learn</span>
+              <span>Pandas</span>
+            </div>
+            <div class="project-links">
+              <a href="https://github.com" target="_blank" rel="noopener">GitHub</a>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact-section">
+      <h2 class="section-title">Get In Touch</h2>
+      <p class="contact-sub">Interested in collaborating or discussing technical roles? Reach out anytime!</p>
+      
+      <div class="contact-links">
+        <a href="mailto:your.email@example.com" class="contact-card">
+          <span class="icon">✉️</span>
+          <span>kavyaramesh10082017@gmail.com</span>
+        </a>
+        <a href="https://github.com/kavyar35" target="_blank" rel="noopener" class="contact-card">
+          <span class="icon">💻</span>
+          <span>GitHub</span>
+        </a>
+        <a href="https://linkedin.com/in/kavya-ramesh-r" target="_blank" rel="noopener" class="contact-card">
+          <span class="icon">💼</span>
+          <span>LinkedIn</span>
+        </a>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2026 Kavya. Built with plain HTML, CSS, and JS.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
